@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+#navbarSelf {
+  color: white;
+  background: black;
+}
+.clientsList {
+  width: 70%;
+}
+.clientForm {
+  width: 30%;
+}

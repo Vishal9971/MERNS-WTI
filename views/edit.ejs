@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+
+<h3 class="text-center">Edit Client</h3>
+<form action="/edit/<%= foundClient._id %>?_method=PATCH" method="POST">
+  <div class="mb-3">
+    <label for="naam" class="form-label">Name : </label>
+    <input type="text" class="form-control" id="naam" name="firstname" value="<%= foundClient.firstname %>" />
+  </div>
+  <div class="mb-3">
+    <label for="lastName" class="form-label">Last Name : </label>
+    <input type="text" class="form-control" id="lastName" name="lastname" value="<%= foundClient.lastname %>" />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email : </label>
+    <input type="email" class="form-control" id="email" name="email" value="<%= foundClient.email %>" />
+  </div>
+  <div class="mb-3">
+    <label for="number" class="form-label">Mobile NO. : </label>
+    <input type="number" class="form-control" id="number" name="number" value="<%= foundClient.number %>" />
+  </div>
+  <div class="mb-3">
+    <label for="project" class="form-label">Project : </label>
+    <input type="text" class="form-control" id="project" name="project" value="<%= foundClient.project %>" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
+<%- include('./partials/footer') %>
